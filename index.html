@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Harvey Tech</title>
+    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -19,25 +20,57 @@
     />
   </head>
   <body>
-    <header
-      class="bg-dark d-flex justify-content-between align-items-center ps-5"
-    >
-      <h5 class="text-white">Harvey Tech</h5>
-      <div class="d-flex text-white opacity-75 gap-3 pt-3 pe-5">
-        <p class="d-none d-md-block">Services</p>
-        <p class="d-none d-md-block">Portfolio</p>
-        <p class="d-none d-md-block">About Us</p>
-        <p class="d-none d-md-block">Staff</p>
-        <p class="d-none d-md-block">Contact Us</p>
-        <i
-          class="fa-solid fa-bars border border-1 p-2 mb-3 d-block d-md-none"
-        ></i>
+    <nav class="navbar navbar-expand-md navbar-light bg-dark">
+      <div class="container-fluid">
+        <p class="text-white">Harvey Tech</p>
+        <button
+          class="navbar-toggler bg-light"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto me-3 mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-white" aria-current="page" href="#"
+                >Services</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" aria-current="page" href="#about"
+                >Portfolio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" aria-current="page" href="#"
+                >About us</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" aria-current="page" href="#"
+                >Staff</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" aria-current="page" href="#"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
-    </header>
+    </nav>
+
     <div
       style="
-        height: 100vh;
+        height: calc(100vh - 65px);
         background-size: cover;
+        background-position: center;
         background-repeat: no-repeat;
         background-image: url(./img/banner.jpeg);
       "
@@ -65,6 +98,145 @@
         </button>
       </div>
     </div>
+  
+    <section id="services" class="container bg-white p-3 pt-5">
+      <h1 class="display-6 text-black text-center mb-4" style="font-size:3rem">Services </h1>
+        
+      <div class="row justify-content-center text-center">
+        <div class="col-sm-12 col-md-6 col-lg-3">
+          <i class="fa-solid fa-code fa-4x border border-1 p-4 bg-danger" style="color:white; border-radius: 50%;"></i>
+          <h2>Programming</h2>
+          <p>  
+           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam,
+           eius?
+          </p> 
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6">
+            <i class="fa-solid fa-palette fa-4x border border-1 p-4 bg-danger" style="color:white; border-radius: 50%;"></i>
+            <h2>Design</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam,
+              eius?Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Numquam, eius?
+            </p>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <i class="fa-solid fa-network-wired fa-4x border border-1 p-4 bg-danger" style="color:white; border-radius: 50%;""></i>            
+            <h2>Networking</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam,
+              eius?
+            </p>
+          </div>
+        </div>
+    </section>
+
+    <section id="Portfolio" class="container bg-light text-center mt-5 pt-5">
+      <h2 class="display-6 text-dark">Portfolio</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi saepe ullam delectus porro ipsum laborum aliquam corporis voluptate accusamus expedita.</p>
+      <div class="row">
+        <div class="col-12 col-sm-6 col-md-4 ">
+          <div class="card">
+            <img src="./img/p1.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Lorem Ipsum</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              
+               
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 ">
+          <div class="card">
+            <img src="./img/p2.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Lorem Ipsum</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 ">
+          <div class="card">
+            <img src="./img/p3.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Lorem Ipsum</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              
+            </div>
+            
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 ">
+          <div class="card">
+            <img src="./img/p4.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Lorem Ipsum</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+                
+            
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 ">
+          <div class="card">
+            <img src="./img/p5.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Lorem Ipsum</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 ">
+          <div class="card">
+            <img src="./img/p6.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Lorem Ipsum</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="About" class="text-center mt-5 p-5">
+      <h2>About Us</h2>
+      <div class="about2 d-flex justify-content-center flex-wrap p-5">
+        <div class="w-50">
+          <img src="./img/aboutus.jpeg" alt="" class="w-100">
+        </div>
+        <div class="w-50">
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, alias nam. Dignissimos expedita incidunt eveniet odit vel itaque mollitia repudiandae rem saepe fugit, est nobis magnam officiis consectetur! Quas id voluptate ad cum voluptatem tenetur pariatur ducimus officia dicta ipsum!</p>
+        </div>
+      </div>
+      
+      
+
+    </section>
+
+
+    
+  
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
